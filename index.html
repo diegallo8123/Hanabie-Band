@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANABIE. | Official Fan Site (Accesible)</title>
+    <style>
+        /* Variables de color para asegurar contraste (Nivel AA) */
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #ffffff;
+            --accent-color: #ff007f; /* Rosa vibrante con alto contraste */
+            --focus-outline: #00e5ff;
+            --card-bg: #1a1a1a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Foco visible para navegación por teclado */
+        :focus {
+            outline: 3px solid var(--focus-outline);
+            outline-offset: 4px;
+        }
+
+        header {
+            background-color: #000;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        nav {
+            background: #222;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 2px solid var(--accent-color);
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        article {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #e60072;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #000;
+            margin-top: 4rem;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HANABIE. (花冷え。)</h1>
+        <p>El estandarte del Harajuku-Core Moderno</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <a href="#biografia">Sobre la banda</a>
+        <a href="#miembros">Miembros</a>
+        <a href="#musica">Discografía</a>
+    </nav>
+
+    <main>
+        <img src="https://revulsionmx.com/wp-content/uploads/2024/12/HANABIE-entrevista_REVULSIONMX.jpg" 
+             alt="Fotografía en contrapicada de las integrantes de la banada Hanabie" 
+             class="hero-image">
+
+        <section id="biografia">
+            <article>
+                <h2>Fusión de Kawaii y Metal</h2>
+                <p>
+                    Formada en 2015, <strong>HANABIE.</strong> ha revolucionado la escena con su estilo autodefinido como "Harajuku-core". 
+                    Combinan voces melódicas con guturales intensos y breakdowns de metalcore, todo bajo una estética visual colorida y urbana.
+                </p>
+            </article>
+        </section>
+
+        <section id="miembros">
+            <h2>Integrantes</h2>
+            <div class="grid">
+                <article>
+                    <h3>Yukina</h3>
+                    <p>Voces principales (Guturales y limpio). Su rango vocal es el pilar del sonido agresivo de la banda.</p>
+                </article>
+                <article>
+                    <h3>Matsuri</h3>
+                    <p>Guitarra y voces. Es la principal compositora y responsable de los riffs técnicos.</p>
+                </article>
+                <article>
+                    <h3>Hettsu</h3>
+                    <p>Bajo y coros. Aporta el estilo visual único y líneas de bajo potentes.</p>
+                </article>
+                <article>
+                    <h3>Chika</h3>
+                    <p>Batería. La fuerza rítmica que mantiene la velocidad del grupo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="musica">
+            <article>
+                <h2>Escucha su último éxito</h2>
+                <p>Descubre por qué "Pardon Me, I Have To Go Now" se volvió viral en todo el mundo.</p>
+                <a href="https://www.youtube.com/@HANABIE_official" class="cta-button" aria-label="Ver videos musicales de HANABIE en YouTube">Explorar discografía en YouTube</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fan Site de HANABIE. - Creado con estándares de accesibilidad.</p>
+    </footer>
+
+</body>
+</html>
